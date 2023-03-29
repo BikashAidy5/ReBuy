@@ -3,9 +3,7 @@ import 'package:flutter_application_1/login.dart';
 import 'package:flutter_application_1/signup_button.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'splash_screen.dart';
 import 'images.dart';
-import 'login_button.dart';
 import 'text_field.dart';
 
 class SignUp extends StatefulWidget {
@@ -120,13 +118,13 @@ class _SignUpState extends State<SignUp> {
                   height: 40,
                 ),
                 Row(
-                  children: [
-                    const Expanded(
+                  children: const [
+                    Expanded(
                         child: Divider(color: Color(0xff555555), height: 1)),
-                    const Text(
+                    Text(
                       ' Or ',
                     ),
-                    const Expanded(
+                    Expanded(
                         child: Divider(color: Color(0xff555555), height: 1))
                   ],
                 ),
@@ -177,7 +175,7 @@ class _SignUpState extends State<SignUp> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => LoginPage(),
+                            builder: (context) => const LoginPage(),
                           ),
                         );
                       },

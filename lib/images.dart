@@ -7,11 +7,9 @@ class PickImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Container(
-        child: Image.asset(
-          image,
-          height: 40,
-        ),
+      child: Image.asset(
+        image,
+        height: 40,
       ),
     );
   }
